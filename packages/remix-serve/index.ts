@@ -10,9 +10,14 @@ export function createApp(buildPath: string, mode = "production") {
 
   app.use(compression());
 
+  let { publicPath, assetsBuildDirectory } = require(buildPath);
+
   app.use(
-    "/build",
-    express.static("public/build", { immutable: true, maxAge: "1y" })
+    publicPath,
+    express.static(assetsBuildDirectory, {
+      immutable: true,
+      maxAge: "1y",
+    })
   );
 
   app.use(express.static("public", { maxAge: "1h" }));
