@@ -1,17 +1,17 @@
 {
   "name": "@remix-run/dev",
-  "version": "1.4.3",
+  "version": "1.5.1",
   "description": "Dev tools and CLI for Remix",
   "homepage": "https://remix.run",
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remix-run/remix/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/remix-run/remix",
     "directory": "packages/remix-dev"
   },
-  "bugs": {
-    "url": "https://github.com/remix-run/remix/issues"
-  },
+  "license": "MIT",
   "bin": {
     "remix": "cli.js"
   },
@@ -21,7 +21,7 @@
     "@babel/preset-typescript": "7.16.7",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "@npmcli/package-json": "^2.0.0",
-    "@remix-run/server-runtime": "1.4.3",
+    "@remix-run/server-runtime": "1.5.1",
     "cacache": "^15.0.5",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.1",
@@ -69,5 +69,8 @@
     "shelljs": "^0.8.5",
     "tiny-invariant": "^1.2.0",
     "type-fest": "^2.12.2"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
